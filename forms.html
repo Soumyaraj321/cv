@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>SR's Payment form</title> 
+</head>
+<body>
+    <form action="">
+        <h1>Payment Form</h1>
+        <h2>Contact Information</h2>
+        <h3>Required field are marked by *</h3>
+        <p>Name: *<input type="text" required></p>
+        <p>
+          <fieldset>
+            <legend>Gender</legend>
+          Male <input type="radio" name="gender" id="gender">
+          Female <input type="radio" name="gender" id="gender">
+          </fieldset>  
+        </p>
+        <p> Addresss
+            <textarea name="address" id="address" cols="100" rows="5"></textarea>
+        </p>
+        Email: &nbsp*<input type="email" name="email" id="email" required>
+        <p>Pincode: *<input type="number" name="num" id="num"></p>
+        <p>Card Type:
+            <select name="card" id="card">
+                <option value = "Select a card type">Select a card type</option> 
+                <option value = "VISA">VISA</option>
+                <option value = "mastercard">mastercard</option>
+                <option value = "Rupay">Rupay</option>
+            
+            </select>
+        </p>
+        <p>
+            Card Number:<input type="number" name="card_num" id="card_num" maxlength="12">
+        </p>
+        <p>
+            Expiration Date: <input type="date" name="date" id="date">
+        </p> 
+        <p>
+            CVV &nbsp <input typ="number" name="cvv" id="cvv" maxlength="3"">
+        </p>
+        Pay Now<input type="submit" id="paynow" name="paynow">
+        
+    </form>
+</body>
+</html>
